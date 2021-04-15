@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><b> Nathaniel's Journal Entries </b></title>
+        <meta name="description" content="A log of Nathaniel's journal entries.">
+        <meta name="author" content="Nathaniel Wong">
+        <meta name="DateUpdate" content="04/07/2021">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+    <header>
+        <h1>Nathaniel's Journal</h1>
+        <img src="Headshot.png" alt="Picture of Nathaniel" width="310" height="272">
+        <p style="color:grey">Hey look, it's me!</p>
+        <div><a href="#allEntries">All Entries</a></div>
+        <nav>
+            <ul>
+                <li><a href="#apr7th">April 7th</a></li>
+                <li><a href="#apr6th">April 6th</a></li>
+                <li><a href="#apr5th">April 5th</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <h2 id="allEntries">All Entries</h2>
+        <section id="apr7th">
+        <details open>
+        <summary><h3 style="display:inline"><i>April 7th, 2021</i></h3></summary>
+        <p>Today, I woke up earlier than I expected. At 6:30 am in the morning, with <span style="color:#999900"><strong>bright yellow</strong></span> rays shining right into my eyes, I woke up, feeling <em>a lot</em> more awake than I expected. I'm used to waking up around 9 to 10 am, so when I woke up feeling refreshed at 6:30 am, I figured I might as well get some use out of this extra awareness. First thing's first, I go through my morning routine:</p>
+            <ol>
+                <li>Roll out of bed</li>
+                <li>Brush my teeth</li>
+                <li>Wash my face</li>
+                <li>Eat breakfast</li>
+            </ol>
+            <p>and then I figured I might as well get to watching <a href="#apr6thMissedClass">the lecture I couldn't make yesterday</a>. Blazed through that pretty quickly before attending my Chinese class.<br>
+            After Chinese, I quickly made some lunch before heading to my next class, CSE 130. And after that, here I am, writing this all down in my journal!
+        </p>
+        </details>
+        </section>
+
+        <section id="apr6th">
+        <details open>
+        <summary><h3 style="display:inline"><i>April 6th, 2021</i></h3></summary>
+        <p>In the famous words of Ke$ha, I "Wake up in the mornin' feelin' like P Diddy." What that means, I don't really know but I like the line so I use it 😂. Unfortunately, that feeling didn't last long. The clock read 10:36 am, and my <span id="apr6thMissedClass">first class starts at 9:30 am.</span> Oops. Sorry CSE 101 😅. After working on some Chinese homework, I clock in a few hours for work to help out with some minor issues before attending my Chinese class then my CSE 110 class. After classes are over, I spend some time playing games with my friends over Discord and we pass a few memes back and forth, some of which include:<br>
+        <img src="exam_meme.png" alt="a funny meme"><br>
+        and<br>
+        <video controls>
+            <source src="square_hole_tiktok.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <br>
+        After taking a short break watching some videos on YouTube, I went back to grinding out some Chinese homework (not super hard but also takes a <em>long</em> time) while listening to some music. For all of you out there looking for some bops, check out Keshi (one of my favorite songs by him is B.Y.S; I'll put it down below).<br>
+        Oh right, I also tried blue Blue Pepper for the first time since I was craving some Thai food, and it was really good!
+
+        <br>
+        keshi - B.Y.S:
+        <br>
+        <audio controls>
+            <source src="keshi-B.Y.S.(Audio).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+        </audio>
+        </p>
+        </details>
+        </section>
+
+        <section id="apr5th">
+        <details open>
+        <summary><h3 style="display:inline"><i>April 5th, 2021</i></h3></summary>
+        <p>Ah yes, the first day of week two. Oh the horror 😩 Finally ready to trudge into the mess my clubs classes are ready to pour onto me, I awake at the young hour of 8 am for a club meeting. It was really good, it's just my brain doesn't like to do the thing where it functions at such an early hour 😢 Luckily, I only have two classes on Mondays, so I have a little more time to settle into the week. The 5 hours I scheduled myself for work on Mondays, however is a bit of an oof. Besides classes and meetings, nothing really eventful happened today.</p>
+        </details>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br>
+            <fieldset>
+                <legend>Contributor</legend>
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="firstName"><br><br>
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" name="lastName"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label>Show Email?</label>
+                <input type="radio" id="yesEmail" name="showEmail" value="Yes">
+                <label for="yesEmail">Yes</label>
+                <input type="radio" id="noEmail" name="showEmail" value="No">
+                <label for="noEmail">No</label>
+                <input type="radio" id="dkEmail" name="showEmail" value="Don't Care">
+                <label for="dkEmail">Don't Care</label>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Pictures</legend>
+                <label>What size pictures will be in this entry?</label>
+                <input type="checkbox" id="small" name="small" value="Small">
+                <label for="small">Small</label>
+                <input type="checkbox" id="medium" name="medium" value="Medium">
+                <label for="medium">Medium</label>
+                <input type="checkbox" id="large" name="large" value="Large">
+                <label for="large">Large</label>
+                <br><br>
+                <label for="numPic">How many pictures will be in this entry?</label>
+                <input list="numPics" name="numPic" id="numPic">
+                <datalist id="numPics">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3+">
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <legend>Body Text</legend>
+                <label for="textSize">Size of text:</label>
+                <select name="textSize" id="textSize">
+                    <option value="small">Small (&lt; 100 words)</option>
+                    <option value="medium">Medium (&lt; 500 words)</option>
+                    <option value="large">Large (&gt; 500 words)</option>
+                    <option value="unsure">Not Sure</option>
+                </select>
+                <label for="entryText">Enter content of entry:</label><br>
+                <textarea id="entryText" name="entryText" rows="4" cols="50">
+                Input text here.
+                </textarea>
+            </fieldset>
+
+            <button type="button">Submit</button>
+        </form>
+    </footer>
+    </body>
+</html>
