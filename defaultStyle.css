@@ -1,3 +1,78 @@
+/* download font */
+@font-face {
+    font-family: "mainFont";
+    src: url("assets/NotoSansHK-Regular.otf");
+}
+
+/* set background color */
 body {
     background-color: lightgrey;
+}
+/* outlines each entry */
+details {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(25,25,100);
+    border-radius: 0.5em;
+    padding-bottom: 0.3em;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    position: relative;
+}
+h3 {
+    display: inline;
+    min-width: 0.3em;
+    max-width: 1em;
+    text-decoration: underline;
+}
+p {
+    font-family: "mainFont", serif;
+    margin: auto;
+}
+
+div {
+    position: static;
+}
+
+/**/
+button:hover{
+    color: blue;
+}
+button:active{
+    color: darkblue;
+}
+
+.flex-properties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+form {
+    display: grid;
+    grid-template-columns: 25% auto 50%;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.block{
+    display: block;
+    padding: 3px, 3px, 3px, 3px;
+    margin: 5px, 5px, 5px, 5px;
+}
+/* make */
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 900px) {
+    form {
+        grid-template-columns: 35% auto 50%;
+    }
 }

@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="defaultStyle.css">
         <style>
             h1 {
+                color: #060089;
                 text-align: center;
+                text-decoration: underline overline hsla(271, 100%, 50%, 1);
             }
-            img {
-                display: block;
+            .center-img {
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -21,7 +22,7 @@
     <body>
     <header>
         <h1>Nathaniel's Journal</h1>
-        <img src="assets/Headshot.png" alt="Picture of Nathaniel" width="310" height="272">
+        <img src="assets/Headshot.png" alt="Picture of Nathaniel" width="310" height="272" class="center-img block">
         <p style="color:grey; text-align: center;">Hey look, it's me!</p>
         <div><a href="#allEntries">All Entries</a></div>
         <nav>
@@ -53,7 +54,7 @@
 
         <section id="apr6th">
         <details open>
-        <summary><h3 style="display:inline"><i>April 6th, 2021</i></h3></summary>
+        <summary><h3><i>April 6th, 2021</i></h3></summary>
         <p>In the famous words of Ke$ha, I "Wake up in the mornin' feelin' like P Diddy." What that means, I don't really know but I like the line so I use it 😂. Unfortunately, that feeling didn't last long. The clock read 10:36 am, and my <span id="apr6thMissedClass">first class starts at 9:30 am.</span> Oops. Sorry CSE 101 😅. After working on some Chinese homework, I clock in a few hours for work to help out with some minor issues before attending my Chinese class then my CSE 110 class. After classes are over, I spend some time playing games with my friends over Discord and we pass a few memes back and forth, some of which include:<br>
         <img src="assets/exam_meme.png" alt="a funny meme"><br>
         and<br>
@@ -86,8 +87,11 @@
     </main>
     <footer>
         <form>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date"><br>
+            <fieldset>
+                <legend>Date of Entry</legend>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br>
+            </fieldset>
             <fieldset>
                 <legend>Contributor</legend>
                 <label for="firstName">First name:</label>
@@ -96,13 +100,15 @@
                 <input type="text" id="lastName" name="lastName"><br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"><br><br>
-                <label>Show Email?</label>
-                <input type="radio" id="yesEmail" name="showEmail" value="Yes">
-                <label for="yesEmail">Yes</label>
-                <input type="radio" id="noEmail" name="showEmail" value="No">
-                <label for="noEmail">No</label>
-                <input type="radio" id="dkEmail" name="showEmail" value="Don't Care">
-                <label for="dkEmail">Don't Care</label>
+                <div class="flex-properties">
+                    <label>Show Email?</label>
+                    <input type="radio" id="yesEmail" name="showEmail" value="Yes">
+                    <label for="yesEmail">Yes</label>
+                    <input type="radio" id="noEmail" name="showEmail" value="No">
+                    <label for="noEmail">No</label>
+                    <input type="radio" id="dkEmail" name="showEmail" value="Don't Care">
+                    <label for="dkEmail">Don't Care</label>
+                </div>
             </fieldset>
 
             
