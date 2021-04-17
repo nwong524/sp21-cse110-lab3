@@ -22,7 +22,7 @@ img {
     display: block;
     position: relative;
 }
-h3 {
+h2, h3 {
     display: inline;
     min-width: 0.3em;
     max-width: 1em;
@@ -75,4 +75,27 @@ form {
     form {
         grid-template-columns: 35% auto 50%;
     }
+}
+
+/* selectors */
+#pdiddy {
+    font-style: italic;
+}
+*.warning {
+    color: red;
+}
+a[href*="apr"] {
+    padding: 2px;
+}
+ol > li {
+    color: royalblue;
+}
+form label {
+    color: purple;
+}
+h1 ~ div {
+    text-decoration: overline;
+}
+legend + label {
+    background-color: whitesmoke;
 }
